@@ -1,15 +1,21 @@
+const display = document.getElementById('display').value;
+
 function appendToDisplay(value) {
-    document.getElementById('display').value += value;
+    display += value;
 }
 
 function clearDisplay() {
-    document.getElementById('display').value = '';
+    display = '';
 }
 
 function calculate() {
-    try {
-        document.getElementById('display').value = eval(document.getElementById('display').value);
-    } catch (error) {
-        document.getElementById('display').value = 'Error';
+    if (display.value == 'Error') {
+        try {
+            display = eval(display);
+        } catch (error) {
+            display.value = 'Error';
+        }
+    } else {
+        alert('Não é possivel realizar calculo.')
     }
 }
