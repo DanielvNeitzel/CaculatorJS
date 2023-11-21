@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Calculadora JS</title>
+</head>
+
+<body>
+
+    <div class="calculator-container">
+        <h5><i class="fa-solid fa-calculator"></i> Calculadora JS</h5>
+        <input class="display-calc" type="text" id="display" disabled>
+        <div class="controls">
+            <div class="line">
+                <button class="btn-calc-default" onclick="appendToDisplay('+')">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <button class="btn-calc-default" onclick="appendToDisplay('-')">
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+                <button class="btn-calc-default" onclick="appendToDisplay('*')">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+                <button class="btn-calc-default" onclick="appendToDisplay('/')">
+                    <i class="fa-solid fa-divide"></i>
+                </button>
+            </div>
+            <div class="line">
+                <div class="block-numbers">
+                    <button onclick="appendToDisplay('1')">
+                        <i class="fa-solid fa-1"></i>
+                    </button>
+                    <button onclick="appendToDisplay('2')">
+                        <i class="fa-solid fa-2"></i>
+                    </button>
+                    <button onclick="appendToDisplay('3')">
+                        <i class="fa-solid fa-3"></i>
+                    </button>
+                    <button onclick="appendToDisplay('4')">
+                        <i class="fa-solid fa-4"></i>
+                    </button>
+                    <button onclick="appendToDisplay('5')">
+                        <i class="fa-solid fa-5"></i>
+                    </button>
+                    <button onclick="appendToDisplay('6')">
+                        <i class="fa-solid fa-6"></i>
+                    </button>
+                    <button onclick="appendToDisplay('7')">
+                        <i class="fa-solid fa-7"></i>
+                    </button>
+                    <button onclick="appendToDisplay('8')">
+                        <i class="fa-solid fa-8"></i>
+                    </button>
+                    <button onclick="appendToDisplay('9')">
+                        <i class="fa-solid fa-9"></i>
+                    </button>
+                    <button onclick="appendToDisplay('0')">
+                        <i class="fa-solid fa-0"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="line">
+                <button class="btn-calc-default w-40" onclick="clearDisplay()">
+                    <i class="fa-solid fa-c"></i>
+                </button>
+                <button class="btn-calc-default w-40" onclick="calculate()">
+                    <i class="fa-solid fa-equals"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
