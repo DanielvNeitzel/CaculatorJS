@@ -9,11 +9,11 @@ function clearDisplay() {
 }
 
 function calculate() {
-    if (display.value !== 'Error') {
+    if (document.getElementById('display').value !== 'Error') {
         try {
-            display = eval(display);
+            document.getElementById('display').value = eval(document.getElementById('display').value);
         } catch (error) {
-            display.value = 'Error';
+            document.getElementById('display').value = 'Error';
         }
     } else {
         alert('Não é possivel realizar calculo.')
