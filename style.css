@@ -63,7 +63,7 @@ html, body {
   cursor: pointer;
 }
 
-.block-numbers > button:hover, .btn-calc-default:hover {
+.block-numbers > button:active, .btn-calc-default:active {
   background-color: #898282;
   border: 2px solid #f1f1f1;
   color: #fff;
