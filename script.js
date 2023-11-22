@@ -9,7 +9,7 @@ function clearDisplay() {
 }
 
 function calculate() {
-    if (display.value == 'Error') {
+    if (display.value !== 'Error') {
         try {
             display = eval(display);
         } catch (error) {
