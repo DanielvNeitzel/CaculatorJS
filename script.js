@@ -1,11 +1,9 @@
-const display = document.getElementById('display').value;
-
 function appendToDisplay(value) {
     document.getElementById('display').value += value;
 }
 
 function clearDisplay() {
-    display = '';
+    document.getElementById('display').value = '';
 }
 
 function calculate() {
